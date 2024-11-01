@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Development Courses</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="main.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background-color: #01020E;
+      color: white;
+      font-family: ClashD
+    }
+    @font-face {
+      font-family: ClashD;
+      src: url(ClashDisplay-Medium.ttf);
+      format: ('truetype');
+    }
+    @font-face {
+      font-family: ClashDisplay-light;
+      src: url(ClashDisplay-Light.ttf);
+      format: ('truetype');
+    }
+    @font-face {
+      font-family: Regular;
+      src: url(/ClashDisplay-Regular.ttf);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 3;
+      padding: 5px 5px;
+      background-color: #030114C7;
+      height: 55px;
+      
+    }
+    .logo {
+      margin: 0;
+    }
+    .hamburger-menu {
+      margin-right: 5px;
+    }
+    div[class*="bar"] {
+      background-color: white;
+      width: 50px;
+      height: 5px;
+      border-radius: 5px;
+      margin: 2px;
+    }
+    nav ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100vh;
+      width: 200px;
+      border-radius: 0 10px 10px 0;
+      background-color: #03051C;
+      box-shadow: -3px 0 5px hsl(270, 100%, 50%) inset;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 3;
+      animation: hamdis 0.5s linear 1;
+    }
+    @keyframes hamdis {
+      from {left: -200px;}
+      to {left: 0;}
+    }
+    nav ul li {
+      border-left: 1.5px solid white;
+      margin: 3px;
+    }
+    nav ul li a {
+      padding: 20px 5px;
+      margin-block: 5px;
+      display: block;
+      color: white;
+      font-weight: bold;
+      font-family: ClashDisplay-light;
+      text-decoration: none;
+      
+    }
+    nav ul li a:hover {
+      border-bottom: 1.5px solid white;
+    }
+    main {
+      margin-top: 70px;
+    }
+    .program {
+      border: 1.6px solid currentColor;
+      margin: 10px 5px;
+      height: 80px;
+      border-radius: 5px;
+      display: flex;
+    }
+    .program h3 {margin: 2px;}
+    footer {
+      background-color: #050C55;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    }
+    footer ul {
+      list-style: none;
+    }
+    .social-link {
+      display: flex;
+    }
+    footer ul li a {
+      text-decoration: none;
+      color: white;
+      font-family: Regular;
+    }
+  </style>
+</head>
+
+<body>
+	<header>
+	  <h3 class="logo">
+	    <img src="/20241028_170142.jpg" alt="logo" height="50" width="50">
+	  </h3>
+
+	    
+	  <nav>
+	  <div class="hamburger-menu" onclick="toggleMenu()">
+	      <div class="bar1"></div>
+	      <div class="bar2" style="width: 40px;"></div>
+	      <div class="bar3"></div>
+	  </div>
+	    <ul id="nav">
+	      <li><a href="#">Home</a></li>
+	      <li><a href="#abt">About</a></li>
+	      <li><a href="#service">service</a></li>
+	      <li><a href="#course">Courses</a></li>
+	      <li><a href="#">Contact</a></li>
+	    </ul>
+	  </nav>
+	</header>
+	<main>
+	  <h1>Web development courses</h1>
+	<div class="program">
+	 <i class="fa fa-html icon"></i>
+	 <div class="text">
+	   <h3>HTML</h3>
+	   <p>Learn HTML from scratch</p>
+	 </div>
+	</div>
+	<div class="program">
+	 <i class="fa fa-css icon"></i>
+	 <div class="text">
+	   <h3>CSS</h3>
+	   <p>Learn CSS from scratch</p>
+	 </div>
+	</div>
+	</main>
+	<footer>
+	  <ul>
+	    <li><a href="">Service</a></li>
+	    <li><a href="">contact</a></li>
+	    <li><a href="">Blog</a></li>
+	  </ul>
+	  <ul class="social-link">
+	    <li><a href="https://www.facebook.com/profile.php?id=100095377902954"><i class="fa fa-facebook icon"></i></a></li>
+	    <li><a href="#"><i class="fa fa-telegram icon"></i></a></li>
+	    <li><a href="mailto: divineij35@gmail.com"><i class="fa fa-envelope icon"></i></a></li>
+	  </ul>
+	</footer>
+</body>
+
+</html>

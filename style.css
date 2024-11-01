@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  background-image: url('InShot_D.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  color: white;
+  animation: increase 8s ease-in-out 3s infinite;
+  margin-top: 50px
+}
+@keyframes increase {
+  from {background-image: url('/InShot_D.png');}
+  to {background-image: url('/pixellab_D.png');}
+}
+@font-face {
+  font-family: ClashD;
+  src: url(ClashDisplay-Medium.ttf);
+  format: ('truetype');
+}
+@font-face {
+  font-family: ClashDisplay-light;
+  src: url(ClashDisplay-Light.ttf);
+  format: ('truetype');
+}
+@font-face {
+  font-family: Regular;
+  src: url(/ClashDisplay-Regular.ttf);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 5px 5px;
+  background-color: #030114C7;
+  height: 55px;
+}
+.logo {
+  margin: 0;
+}
+.hamburger-menu {
+  margin-right: 5px;
+}
+div[class*="bar"] {
+  background-color: white;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  margin: 2px;
+}
+nav ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 200px;
+  border-radius: 0 10px 10px 0;
+  background-color: #03051C;
+  box-shadow: -3px 0 5px hsl(270, 100%, 50%) inset;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  animation: hamdis 0.5s linear 1;
+}
+@keyframes hamdis {
+  from {left: -200px;}
+  to {left: 0;}
+}
+nav ul li {
+  border-left: 1.5px solid white;
+  margin: 3px;
+}
+nav ul li a {
+  padding: 20px 5px;
+  margin-block: 5px;
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-family: ClashDisplay-light;
+  text-decoration: none;
+  
+}
+nav ul li a:hover {
+  border-bottom: 1.5px solid white;
+}
+.intro-head {
+  font-family: ClashD;
+  position: relative;
+  text-shadow: 0 1px black, 1px 0 black, 0 -1px black, -1px 0 black;
+}
+.intro-head span {
+  text-shadow: 0 1px #eee, 1px 0 #eee, 0 -1px #eee, -1px 0 #eee;
+}
+.intro-bg {
+  position: relative;
+  opacity: 0.7;
+  width: 100%;
+}
+.intro-content {
+  position: absolute;
+  top: 15px;
+  font-size: 1.1em;
+  font-family: ClashD;
+  animation: slideup 2s linear 1;
+}
+@keyframes slideup {
+  from {top: 70px;}
+  to {top: 15px;}
+}
+.intro-content h4, h1 {
+  margin: 1px;
+}
+.button {
+  width: 100%;
+  border-radius: 15px;
+  height: 2em;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-family: ClashD;
+  cursor: pointer;
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 30px;
+  border: none;
+  animation: ntl 2s ease-in-out infinite;
+}
+@keyframes ntl {
+ 0% {transform: scale(0.9);}
+ 50% {transform: scale(1);}
+ 100% {transform: scale(0.9);}
+}
+.about, .service{
+  border-left: 2px solid white;
+  border-radius: 5px;
+  background-color: #eee3;
+  box-shadow: 0 0 5px grey;
+  font-size: 1.1em;
+  padding: 10px;
+  margin: 10px 5px;
+}
+p {
+  font-family: Regular;
+}
+.about {
+  position: relative;
+  animation: move1 4s ease 0s 1;
+}
+@keyframes move1 {
+  from {opacity: 0.5; left: -100px;}
+  to {opacity: 1; left: 5px;}
+}
+.about h3, .service h4, .course h3{
+  font-family: ClashD;
+}
+.Courses {
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 10px;
+  background-image: linear-gradient(to bottom right, #00f5, #00d5, #00b5);
+}
+footer {
+  background-color: #050C55;
+  position: relative;
+  bottom: 0;
+}
+footer ul {
+  list-style: none;
+}
+.social-link {
+  display: flex;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Regular;
+}
