@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+    @font-face {
+      font-family: Regular;
+      src: url(/ClashDisplay-Regular.ttf);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .next, .previous {
+      height: 50px;
+      width: 100px;
+      font-family: Regular;
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 10px;
+      border: none;
+    }
+    .next {
+      background-color: blue;
+    }
+    .previous {
+      background-color: grey;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    body {
+      background-color: black;
+      color: white;
+      font-family: Regular;
+    }
+    main {
+      margin: 5px;
+      letter-spacing: 1px;
+      line-height: 1em;
+    }
+    footer {
+      background-color: #050C55;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    }
+    footer ul {
+      list-style: none;
+    }
+    .social-link {
+      display: flex;
+    }
+    footer ul li a {
+      text-decoration: none;
+      color: white;
+      font-family: Regular;
+      padding: 10px;
+    }
+  </style>
+  <body>
+  <header>
+    <button type="button" class="previous" onclick="history.back()">previous</button>
+    <button type="button" class="next">Next</button>
+  </header> 
+  <main>
+    <h3>Welcome to Web Development!</h3>
+
+    Web development is the process of creating websites and web applications that you see and use online every day – from social media sites to online stores. It’s all about building pages, making them look good, and adding interactivity so that users can enjoy a smooth experience.<br /><br />
+
+<h4>In web development, there are three main building blocks:</h4>
+
+<b>HTML (HyperText Markup Language)</b> – This is the foundation of any website. HTML gives structure to the content, like headings, paragraphs, images, and links, so everything has a place on the page.<br /><br />
+
+<b>CSS (Cascading Style Sheets)</b> – CSS is used to style the website, making it look nice with colors, layouts, fonts, and effects. It allows us to turn simple content into an attractive, easy-to-read page.<br /><br />
+
+<b>JavaScript</b> – JavaScript adds interactivity to the site, letting users engage by clicking buttons, filling out forms, or watching slideshows. It makes the website come to life with dynamic features.<br /><br /><br />
+
+In this journey, you'll start by learning HTML to create the basic structure, then move to CSS to style it, and eventually dive into JavaScript to make it interactive. Web development is a powerful skill, and as you learn, you’ll gain the tools to bring your own ideas to life on the web. Let's get started!
+  </main>
+	  <header>
+    <button type="button" class="previous" onclick="history.back()">previous</button>
+    <button type="button" class="next">Next</button>
+  </header> 
+  	<footer>
+	  <ul>
+	    <li><a href="">Service</a></li>
+	    <li><a href="">contact</a></li>
+	    <li><a href="">Blog</a></li>
+	  </ul>
+	  <ul class="social-link">
+	    <li><a href="https://www.facebook.com/profile.php?id=100095377902954"><i class="fa fa-facebook icon"></i></a></li>
+	    <li><a href="http://t.me/DivineMediaTV"><i class="fa fa-telegram icon"></i></a></li>
+	    <li><a href="mailto: divineij35@gmail.com"><i class="fa fa-envelope icon"></i></a></li>
+	  </ul>
+	</footer>
+  </body>
+</html>

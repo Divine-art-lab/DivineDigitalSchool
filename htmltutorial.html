@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+    @font-face {
+      font-family: Regular;
+      src: url(/ClashDisplay-Regular.ttf);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .next, .previous {
+      height: 50px;
+      width: 100px;
+      font-family: Regular;
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 10px;
+      border: none;
+    }
+    .next {
+      background-color: blue;
+    }
+    .previous {
+      background-color: grey;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    body {
+      background-color: black;
+      color: white;
+      font-family: Regular;
+    }
+    .content {
+      margin: 5px;
+      letter-spacing: 1px;
+      line-height: 1em;
+    }
+    footer {
+      background-color: #050C55;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    }
+    footer ul {
+      list-style: none;
+    }
+    .social-link {
+      display: flex;
+    }
+    footer ul li a {
+      text-decoration: none;
+      color: white;
+      font-family: Regular;
+      padding: 10px;
+    }
+  </style>
+  <body>
+  <header>
+    <button type="button" class="previous" onclick="history.back()">previous</button>
+    <button type="button" class="next" onclick="document.location='htmltutorial2.html'">Next</button>
+  </header>  
+  <main>
+    <h2>Introduction To Web development</h2>
+    <section class="content">
+      <h3>Here’s a structured introduction to help you get started.</h3>
+
+      <b># Introduction to Web Development</b>
+
+      <b>What is Web Development?</b><br /><br />
+
+      Web development involves creating websites and web applications. It encompasses several disciplines, including:<br /><br />
+
+      <h3 class="list">Front-end Development:</h3> This deals with the visual elements of a website that users interact with directly. Key technologies include:<br />
+       - <b>HTML (HyperText Markup Language):</b> The structure of web pages.<br />
+       - <b>CSS (Cascading Style Sheets):</b> The styling of web pages (layout, colors, fonts).<br />
+       - <b>JavaScript:</b> A programming language that adds interactivity to web pages.<br /><br />
+
+      <h3 class="list">Back-end Development:</h3> This involves server-side logic and database management. Key technologies include:<br /><br />
+      - <b>Languages:</b> PHP, Python, Ruby, Node.js, etc.<br />
+     - <b>Databases:</b> MySQL, MongoDB, PostgreSQL, etc.<br /><br />
+
+     <h3 class="list">Full-Stack Development:</h3> This combines both front-end and back-end skills.<br /><br />
+
+
+
+     # Conclusion<br />
+
+     try to  take your time, practice consistently, and not hesitate to ask for help. Building a solid foundation in web development can lead to exciting opportunities!
+    </section>
+  </main>
+	  <header>
+    <button type="button" class="previous" onclick="history.back()">previous</button>
+    <button type="button" class="next" onclick="document.location='htmltutorial2.html'">Next</button>
+  </header> 
+  	<footer>
+	  <ul>
+	    <li><a href="">Service</a></li>
+	    <li><a href="">contact</a></li>
+	    <li><a href="">Blog</a></li>
+	  </ul>
+	  <ul class="social-link">
+	    <li><a href="https://www.facebook.com/profile.php?id=100095377902954"><i class="fa fa-facebook icon"></i></a></li>
+	    <li><a href="http://t.me/DivineMediaTV"><i class="fa fa-telegram icon"></i></a></li>
+	    <li><a href="mailto: divineij35@gmail.com"><i class="fa fa-envelope icon"></i></a></li>
+	  </ul>
+	</footer>
+  </body>
+</html>

@@ -10,7 +10,8 @@ body {
   background-size: contain;
   color: white;
   animation: increase 8s ease-in-out 3s infinite;
-  margin-top: 50px
+  margin: 0;
+  margin-top: 50px;
 }
 @keyframes increase {
   from {background-image: url('/InShot_D.png');}
@@ -65,7 +66,7 @@ nav ul {
   width: 200px;
   border-radius: 0 10px 10px 0;
   background-color: #03051C;
-  box-shadow: -3px 0 5px hsl(270, 100%, 50%) inset;
+  box-shadow: -3px 0 5px hsl(250, 100%, 50%) inset;
   position: absolute;
   left: 0;
   top: 0;
@@ -97,6 +98,7 @@ nav ul li a:hover {
   font-family: ClashD;
   position: relative;
   text-shadow: 0 1px black, 1px 0 black, 0 -1px black, -1px 0 black;
+  padding: 5px;
 }
 .intro-head span {
   text-shadow: 0 1px #eee, 1px 0 #eee, 0 -1px #eee, -1px 0 #eee;
@@ -136,6 +138,7 @@ nav ul li a:hover {
   border: none;
   animation: ntl 2s ease-in-out infinite;
 }
+button a {text-decoration: none; color: #fff;}
 @keyframes ntl {
  0% {transform: scale(0.9);}
  50% {transform: scale(1);}
@@ -149,6 +152,8 @@ nav ul li a:hover {
   font-size: 1.1em;
   padding: 10px;
   margin: 10px 5px;
+  width: 90vw;
+  margin: 10px auto;
 }
 p {
   font-family: Regular;
@@ -170,17 +175,40 @@ p {
   border-radius: 10px;
   margin: 10px;
   background-image: linear-gradient(to bottom right, #00f5, #00d5, #00b5);
+  width: 90vw;
+  margin: 10px auto;
+}
+
+.donate {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px double white;
+  position: fixed;
+  bottom: 3px;
+  right: 3px;
+  animation: donate 1s ease-in-out infinite;
+}
+@keyframes donate {
+  from {transform: scale(0.5);}
+  to {scale: (1);}
 }
 footer {
   background-color: #050C55;
-  position: relative;
-  bottom: 0;
+  width: 100%;
+  margin: 0;
 }
 footer ul {
   list-style: none;
 }
 .social-link {
   display: flex;
+  justify-content: space-evenly;
 }
 footer ul li a {
   text-decoration: none;

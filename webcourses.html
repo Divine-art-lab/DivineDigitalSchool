@@ -104,8 +104,18 @@
       height: 80px;
       border-radius: 5px;
       display: flex;
+      align-items: center;
+      padding: 3px;
+      transition: 0.5s ease-in-out;
     }
+    .program .icon {
+      font-size: 60px;
+      padding: 3px;
+    } 
     .program h3 {margin: 2px;}
+    .program:hover {
+      background-color: blue;
+    }
     footer {
       background-color: #050C55;
       position: relative;
@@ -122,6 +132,7 @@
       text-decoration: none;
       color: white;
       font-family: Regular;
+      padding: 10px;
     }
   </style>
 </head>
@@ -144,28 +155,28 @@
 	      <li><a href="#abt">About</a></li>
 	      <li><a href="#service">service</a></li>
 	      <li><a href="#course">Courses</a></li>
-	      <li><a href="#">Contact</a></li>
+	      <li><a href="#footet">Contact</a></li>
 	    </ul>
 	  </nav>
 	</header>
 	<main>
 	  <h1>Web development courses</h1>
-	<div class="program">
-	 <i class="fa fa-html icon"></i>
+	<div class="program" onclick="document.location='htmltutorial.html'">
+	 <i class="fa fa-html5 icon"></i>
 	 <div class="text">
 	   <h3>HTML</h3>
 	   <p>Learn HTML from scratch</p>
 	 </div>
 	</div>
-	<div class="program">
-	 <i class="fa fa-css icon"></i>
+	<div class="program" onclick="document.location='csstutorial.html'">
+	 <i class="fa fa-css3 icon"></i>
 	 <div class="text">
 	   <h3>CSS</h3>
 	   <p>Learn CSS from scratch</p>
 	 </div>
 	</div>
 	</main>
-	<footer>
+	<footer id="footer">
 	  <ul>
 	    <li><a href="">Service</a></li>
 	    <li><a href="">contact</a></li>
@@ -173,7 +184,7 @@
 	  </ul>
 	  <ul class="social-link">
 	    <li><a href="https://www.facebook.com/profile.php?id=100095377902954"><i class="fa fa-facebook icon"></i></a></li>
-	    <li><a href="#"><i class="fa fa-telegram icon"></i></a></li>
+	    <li><a href="http://t.me/DivineMediaTV"><i class="fa fa-telegram icon"></i></a></li>
 	    <li><a href="mailto: divineij35@gmail.com"><i class="fa fa-envelope icon"></i></a></li>
 	  </ul>
 	</footer>
