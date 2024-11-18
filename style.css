@@ -178,6 +178,10 @@ p {
   width: 90vw;
   margin: 10px auto;
 }
+.Courses h3 {
+  display: flex;
+  flex-direction: column;
+}
 
 .donate {
   height: 50px;
