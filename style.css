@@ -2,20 +2,15 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #000;
-  background-image: url('InShot_D.png');
+  /*background-image: url(/InShot_20241028_174428854.png);
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: contain;
+  background-attachment: fixed;*/
+  background-color: #000;
   color: white;
-  animation: increase 8s ease-in-out 3s infinite;
   margin: 0;
   margin-top: 50px;
-}
-@keyframes increase {
-  from {background-image: url('/InShot_D.png');}
-  to {background-image: url('/pixellab_D.png');}
 }
 @font-face {
   font-family: ClashD;
@@ -39,9 +34,8 @@ header {
   top: 0;
   width: 100%;
   z-index: 3;
-  padding: 5px 5px;
+  padding: 10px 5px;
   background-color: #030114C7;
-  height: 55px;
 }
 .logo {
   margin: 0;
@@ -123,7 +117,7 @@ nav ul li a:hover {
   margin: 1px;
 }
 .button {
-  width: 100%;
+  width: 90%;
   border-radius: 15px;
   height: 2em;
   background-color: blue;
@@ -136,19 +130,17 @@ nav ul li a:hover {
   margin-inline: auto;
   margin-bottom: 30px;
   border: none;
-  animation: ntl 2s ease-in-out infinite;
 }
-button a {text-decoration: none; color: #fff;}
-@keyframes ntl {
- 0% {transform: scale(0.9);}
- 50% {transform: scale(1);}
- 100% {transform: scale(0.9);}
+button a {
+  text-decoration: none; color: #fff;
+  
 }
 .about, .service{
   border-left: 2px solid white;
   border-radius: 5px;
   background-color: #eee3;
   box-shadow: 0 0 5px grey;
+  backdrop-filter: blur(5px);
   font-size: 1.1em;
   padding: 10px;
   margin: 10px 5px;
@@ -160,7 +152,9 @@ p {
 }
 .about {
   position: relative;
-  animation: move1 4s ease 0s 1;
+  animation: move1 ease 0s 1;
+  animation-time-line: view;
+  animation-range: entry 0;
 }
 @keyframes move1 {
   from {opacity: 0.5; left: -100px;}
