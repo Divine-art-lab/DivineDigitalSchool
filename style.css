@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+@import url(https://fonts.googleapis/css?gamily=Popinse);
 body {
   /*background-image: url(/InShot_20241028_174428854.png);
   background-size: contain;
@@ -36,6 +37,7 @@ header {
   z-index: 3;
   padding: 10px 5px;
   background-color: #030114C7;
+  backdrop-filter: blur(5px);
 }
 .logo {
   margin: 0;
