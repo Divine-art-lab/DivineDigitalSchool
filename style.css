@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-@import url(https://fonts.googleapis/css?gamily=Popinse);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
 body {
   /*background-image: url(/InShot_20241028_174428854.png);
   background-size: contain;
@@ -12,6 +12,7 @@ body {
   color: white;
   margin: 0;
   margin-top: 50px;
+  font-family: Poppins;
 }
 @font-face {
   font-family: ClashD;
@@ -23,10 +24,6 @@ body {
   src: url(ClashDisplay-Light.ttf);
   format: ('truetype');
 }
-@font-face {
-  font-family: Regular;
-  src: url(/ClashDisplay-Regular.ttf);
-}
 header {
   display: flex;
   justify-content: space-between;
@@ -36,7 +33,7 @@ header {
   width: 100%;
   z-index: 3;
   padding: 10px 5px;
-  background-color: #030114C7;
+  background-color: #010A2CCF;
   backdrop-filter: blur(5px);
 }
 .logo {
@@ -150,7 +147,7 @@ button a {
   margin: 10px auto;
 }
 p {
-  font-family: Regular;
+  font-family: 'Poppins';
 }
 .about {
   position: relative;
