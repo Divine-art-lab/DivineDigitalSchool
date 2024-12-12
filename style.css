@@ -20,8 +20,8 @@ body {
   format: ('truetype');
 }
 @font-face {
-  font-family: ClashDisplay-light;
-  src: url(ClashDisplay-Light.ttf);
+  font-family: Poppins;
+  src: url(Poppins-Regular.ttf);
   format: ('truetype');
 }
 header {
@@ -32,9 +32,9 @@ header {
   top: 0;
   width: 100%;
   z-index: 3;
-  padding: 10px 5px;
-  background-color: #010A2CCF;
-  backdrop-filter: blur(5px);
+  padding: 5px 5px;
+  background-color: #010A2CBF;
+  backdrop-filter: blur(2px);
 }
 .logo {
   margin: 0;
@@ -44,7 +44,7 @@ header {
 }
 div[class*="bar"] {
   background-color: white;
-  width: 50px;
+  width: 45px;
   height: 5px;
   border-radius: 5px;
   margin: 2px;
@@ -64,7 +64,7 @@ nav ul {
   left: 0;
   top: 0;
   z-index: 3;
-  animation: hamdis 0.5s linear 1;
+  animation: hamdis 0.3s linear 1;
 }
 @keyframes hamdis {
   from {left: -200px;}
@@ -80,7 +80,7 @@ nav ul li a {
   display: block;
   color: white;
   font-weight: bold;
-  font-family: ClashDisplay-light;
+  font-family: clashD;
   text-decoration: none;
   
 }
@@ -88,25 +88,23 @@ nav ul li a:hover {
   border-bottom: 1.5px solid white;
 }
 .intro-head {
-  font-family: ClashD;
+  font-family: Poppins;
   position: relative;
   text-shadow: 0 1px black, 1px 0 black, 0 -1px black, -1px 0 black;
   padding: 5px;
 }
 .intro-head span {
-  text-shadow: 0 1px #eee, 1px 0 #eee, 0 -1px #eee, -1px 0 #eee;
 }
 .intro-bg {
-  position: relative;
-  opacity: 0.7;
   width: 100%;
 }
 .intro-content {
-  position: absolute;
   top: 15px;
-  font-size: 1.1em;
-  font-family: ClashD;
+  font-size: 6vmin;
+  font-family: Poppins;
   animation: slideup 2s linear 1;
+  font-weight: bolder;
+  line-height: 1.5em;
 }
 @keyframes slideup {
   from {top: 70px;}
@@ -114,6 +112,9 @@ nav ul li a:hover {
 }
 .intro-content h4, h1 {
   margin: 1px;
+}
+.intro-content h4 {
+  color: lightgray;
 }
 .button {
   width: 90%;
@@ -123,7 +124,7 @@ nav ul li a:hover {
   color: white;
   text-align: center;
   font-size: 2em;
-  font-family: ClashD;
+  font-family: Poppins;
   cursor: pointer;
   display: block;
   margin-inline: auto;
@@ -199,6 +200,7 @@ footer {
   background-color: #050C55;
   width: 100%;
   margin: 0;
+  transform: translateY(100px);
 }
 footer ul {
   list-style: none;
@@ -210,5 +212,5 @@ footer ul {
 footer ul li a {
   text-decoration: none;
   color: white;
-  font-family: Regular;
+  font-family: Poppins;
 }
