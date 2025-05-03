@@ -3,11 +3,6 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 body {
-  /*background-image: url(/InShot_20241028_174428854.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;*/
   background-color: #000;
   color: white;
   margin: 0;
@@ -64,14 +59,13 @@ nav ul {
   left: 0;
   top: 0;
   z-index: 3;
-  animation: hamdis 0.3s linear 1;
+  animation: hamdis 0.1s linear 1;
 }
 @keyframes hamdis {
   from {left: -200px;}
   to {left: 0;}
 }
 nav ul li {
-  border-left: 1.5px solid white;
   margin: 3px;
 }
 nav ul li a {
@@ -176,7 +170,12 @@ p {
   display: flex;
   flex-direction: column;
 }
-
+.Courses h3 .icon {
+  font-size: 2em;
+}
+.Courses:hover {
+  background: blue;
+}
 .donate {
   height: 50px;
   width: 50px;
